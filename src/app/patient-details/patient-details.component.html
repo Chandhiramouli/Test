@@ -1,0 +1,35 @@
+<div class="table-div" style="background-color: silver;">
+    <table>
+        <tr style="background-color:darkgrey">
+            <th>PatientNo</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Password</th>
+            <th>MobileNo</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Address</th>      
+            <th>BloodPressure</th>
+            <th>BodyTemperature</th>
+            <th>Action</th>
+        </tr>
+        <tr *ngFor='let user of users'>
+            <td>{{user.patientNo}}</td>
+            <td>{{user.name}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.password}}</td>
+            <td>{{user.mobileNo}}</td>
+            <td>{{user.age}}</td>
+            <td>{{user.gender}}</td>
+            <td>{{user.address}}</td>
+            <td>{{user.bloodPressure}}</td>
+            <td>{{user.bodyTemperature}}</td>
+            <td><button 
+                [ngClass]="{'green' : toggle }"
+                (click)="coronoVirusChecking($event)">
+                {{status}}
+            </button>
+            </td>
+        </tr>    
+    </table>
+</div>

@@ -1,0 +1,20 @@
+<div>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>MobileNo</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Address</th>      
+        </tr>
+        <tr  *ngFor='let doctor of doctorreg'>
+            <td>{{doctor.name}}</td>
+            <td>{{doctor.email}}</td>
+            <td>{{doctor.mobileNo}}</td>
+            <td>{{doctor.age}}</td>
+            <td>{{doctor.gender}}</td>
+            <td>{{doctor.address}}</td>
+        </tr>    
+    </table>
+</div>
